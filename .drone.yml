@@ -1,9 +1,9 @@
 kind: pipeline
-name: jkd7
+name: jdk7
 
 steps:
 - name: test
-  image: maven:3.5.0-jdk7
+  image: maven:3.5.0-jdk-7
   commands:
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
   - mvn test -B
@@ -13,7 +13,7 @@ name: jdk8
 
 steps:
 - name: test
-  image: maven:3.5.0-jdk8
+  image: maven:3.5.0-jdk-8
   commands:
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
   - mvn test -B
