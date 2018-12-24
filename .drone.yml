@@ -1,5 +1,5 @@
 kind: pipeline
-name: default
+name: jkd7
 
 steps:
 - name: test
@@ -9,7 +9,7 @@ steps:
   - mvn test -B
 ------
 kind: pipeline
-name: default
+name: jdk8
 
 steps:
 - name: test
