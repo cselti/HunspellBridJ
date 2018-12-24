@@ -1,9 +1,19 @@
-kind: pipeline
-name: default
+local Pipeline(name, image) = {
+  kind: "pipeline",
+  name: name,
+  steps: [
+    {
+      name: "test",
+      image: image,
+      commands: [
+        "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V",
+        "mvn test -B"
+      ]
+    }
+  ]
+};
 
-steps:
-- name: test
-  image: maven:3.5.0
-  commands:
-  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-  - mvn test -B
+[
+  Pipeline("jdk7", "maven:3.5.0-jdk7"),
+  Pipeline("jdk8", "maven:3.5.0-jdk8"),
+]
