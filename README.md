@@ -2,7 +2,9 @@ HunspellBridJ
 =============
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 
-[![Build Status](https://travis-ci.org/thomas-joiner/HunspellBridJ.png)](https://travis-ci.org/thomas-joiner/HunspellBridJ)
+[![Travis-CI Status](https://travis-ci.org/cselti/HunspellBridJ.png)](https://travis-ci.org/cselti/HunspellBridJ)
+
+[![Drone Status](https://cloud.drone.io/api/badges/cselti/HunspellBridJ/status.svg)](https://cloud.drone.io/cselti/HunspellBridJ)
 
 This library provides an API to interface with Hunspell using BridJ.
 
